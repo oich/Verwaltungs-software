@@ -1,0 +1,11 @@
+c:\users\andy\documents\visual studio 2015\Projects\Verwaltung\Verwaltung\bin\Debug\Verwaltung.exe.config
+c:\users\andy\documents\visual studio 2015\Projects\Verwaltung\Verwaltung\bin\Debug\Verwaltung.exe
+c:\users\andy\documents\visual studio 2015\Projects\Verwaltung\Verwaltung\bin\Debug\Verwaltung.pdb
+c:\users\andy\documents\visual studio 2015\Projects\Verwaltung\Verwaltung\bin\Debug\Verwaltung.xml
+c:\users\andy\documents\visual studio 2015\Projects\Verwaltung\Verwaltung\obj\Debug\Verwaltung.vbprojResolveAssemblyReference.cache
+c:\users\andy\documents\visual studio 2015\Projects\Verwaltung\Verwaltung\obj\Debug\Verwaltung.Form1.resources
+c:\users\andy\documents\visual studio 2015\Projects\Verwaltung\Verwaltung\obj\Debug\Verwaltung.Resources.resources
+c:\users\andy\documents\visual studio 2015\Projects\Verwaltung\Verwaltung\obj\Debug\Verwaltung.vbproj.GenerateResource.Cache
+c:\users\andy\documents\visual studio 2015\Projects\Verwaltung\Verwaltung\obj\Debug\Verwaltung.exe
+c:\users\andy\documents\visual studio 2015\Projects\Verwaltung\Verwaltung\obj\Debug\Verwaltung.xml
+c:\users\andy\documents\visual studio 2015\Projects\Verwaltung\Verwaltung\obj\Debug\Verwaltung.pdb
