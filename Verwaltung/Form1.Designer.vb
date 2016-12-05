@@ -22,8 +22,15 @@ Partial Class Form1
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Kunden = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DauererVerwaltungauftraegemainBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Dauerer_Verwaltung_auftraege_main = New Verwaltung.Dauerer_Verwaltung_auftraege_main()
+        Me.Date_heute = New System.Windows.Forms.DateTimePicker()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.CoB_beab = New System.Windows.Forms.ComboBox()
         Me.lb_abteilung = New System.Windows.Forms.ListBox()
         Me.brow_kunde = New System.Windows.Forms.WebBrowser()
         Me.Kundennummer = New System.Windows.Forms.Label()
@@ -41,16 +48,16 @@ Partial Class Form1
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.Einstellungen = New System.Windows.Forms.TabPage()
-        Me.CoB_beab = New System.Windows.Forms.ComboBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Date_heute = New System.Windows.Forms.DateTimePicker()
-        Me.TE_SET_1 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TE_SET_1 = New System.Windows.Forms.TextBox()
         Me.Kunden.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DauererVerwaltungauftraegemainBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Dauerer_Verwaltung_auftraege_main, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Einstellungen.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -70,6 +77,7 @@ Partial Class Form1
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.DodgerBlue
+        Me.TabPage1.Controls.Add(Me.DataGridView1)
         Me.TabPage1.Controls.Add(Me.Date_heute)
         Me.TabPage1.Controls.Add(Me.Label1)
         Me.TabPage1.Controls.Add(Me.CoB_beab)
@@ -93,6 +101,49 @@ Partial Class Form1
         Me.TabPage1.Size = New System.Drawing.Size(1220, 703)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Kunden"
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(5, 54)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(998, 67)
+        Me.DataGridView1.TabIndex = 18
+        '
+        'DauererVerwaltungauftraegemainBindingSource
+        '
+        Me.DauererVerwaltungauftraegemainBindingSource.DataSource = Me.Dauerer_Verwaltung_auftraege_main
+        Me.DauererVerwaltungauftraegemainBindingSource.Position = 0
+        '
+        'Dauerer_Verwaltung_auftraege_main
+        '
+        Me.Dauerer_Verwaltung_auftraege_main.DataSetName = "Dauerer_Verwaltung_auftraege_main"
+        Me.Dauerer_Verwaltung_auftraege_main.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'Date_heute
+        '
+        Me.Date_heute.Location = New System.Drawing.Point(722, 28)
+        Me.Date_heute.Name = "Date_heute"
+        Me.Date_heute.Size = New System.Drawing.Size(200, 20)
+        Me.Date_heute.TabIndex = 17
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(445, 3)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(55, 13)
+        Me.Label1.TabIndex = 16
+        Me.Label1.Text = "Bearbeiter"
+        '
+        'CoB_beab
+        '
+        Me.CoB_beab.FormattingEnabled = True
+        Me.CoB_beab.Items.AddRange(New Object() {"AE", "AH", "OD"})
+        Me.CoB_beab.Location = New System.Drawing.Point(448, 28)
+        Me.CoB_beab.Name = "CoB_beab"
+        Me.CoB_beab.Size = New System.Drawing.Size(52, 21)
+        Me.CoB_beab.TabIndex = 15
         '
         'lb_abteilung
         '
@@ -211,7 +262,7 @@ Partial Class Form1
         Me.brow_auftrag.Location = New System.Drawing.Point(217, 127)
         Me.brow_auftrag.MinimumSize = New System.Drawing.Size(20, 20)
         Me.brow_auftrag.Name = "brow_auftrag"
-        Me.brow_auftrag.Size = New System.Drawing.Size(688, 568)
+        Me.brow_auftrag.Size = New System.Drawing.Size(786, 568)
         Me.brow_auftrag.TabIndex = 8
         '
         'TabPage2
@@ -249,51 +300,12 @@ Partial Class Form1
         Me.Einstellungen.Text = "Einstellungen"
         Me.Einstellungen.UseVisualStyleBackColor = True
         '
-        'CoB_beab
+        'TextBox4
         '
-        Me.CoB_beab.FormattingEnabled = True
-        Me.CoB_beab.Items.AddRange(New Object() {"AE", "AH", "OD"})
-        Me.CoB_beab.Location = New System.Drawing.Point(448, 28)
-        Me.CoB_beab.Name = "CoB_beab"
-        Me.CoB_beab.Size = New System.Drawing.Size(52, 21)
-        Me.CoB_beab.TabIndex = 15
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(445, 3)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(55, 13)
-        Me.Label1.TabIndex = 16
-        Me.Label1.Text = "Bearbeiter"
-        '
-        'Date_heute
-        '
-        Me.Date_heute.Location = New System.Drawing.Point(722, 28)
-        Me.Date_heute.Name = "Date_heute"
-        Me.Date_heute.Size = New System.Drawing.Size(200, 20)
-        Me.Date_heute.TabIndex = 17
-        '
-        'TE_SET_1
-        '
-        Me.TE_SET_1.Location = New System.Drawing.Point(178, 114)
-        Me.TE_SET_1.Name = "TE_SET_1"
-        Me.TE_SET_1.Size = New System.Drawing.Size(213, 20)
-        Me.TE_SET_1.TabIndex = 0
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(178, 140)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(213, 20)
-        Me.TextBox1.TabIndex = 1
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(178, 166)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(213, 20)
-        Me.TextBox2.TabIndex = 2
+        Me.TextBox4.Location = New System.Drawing.Point(178, 219)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(213, 20)
+        Me.TextBox4.TabIndex = 4
         '
         'TextBox3
         '
@@ -302,12 +314,26 @@ Partial Class Form1
         Me.TextBox3.Size = New System.Drawing.Size(213, 20)
         Me.TextBox3.TabIndex = 3
         '
-        'TextBox4
+        'TextBox2
         '
-        Me.TextBox4.Location = New System.Drawing.Point(178, 219)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(213, 20)
-        Me.TextBox4.TabIndex = 4
+        Me.TextBox2.Location = New System.Drawing.Point(178, 166)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(213, 20)
+        Me.TextBox2.TabIndex = 2
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(178, 140)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(213, 20)
+        Me.TextBox1.TabIndex = 1
+        '
+        'TE_SET_1
+        '
+        Me.TE_SET_1.Location = New System.Drawing.Point(178, 114)
+        Me.TE_SET_1.Name = "TE_SET_1"
+        Me.TE_SET_1.Size = New System.Drawing.Size(213, 20)
+        Me.TE_SET_1.TabIndex = 0
         '
         'Form1
         '
@@ -321,6 +347,9 @@ Partial Class Form1
         Me.Kunden.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DauererVerwaltungauftraegemainBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Dauerer_Verwaltung_auftraege_main, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Einstellungen.ResumeLayout(False)
         Me.Einstellungen.PerformLayout()
         Me.ResumeLayout(False)
@@ -354,4 +383,7 @@ Partial Class Form1
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DauererVerwaltungauftraegemainBindingSource As BindingSource
+    Friend WithEvents Dauerer_Verwaltung_auftraege_main As Dauerer_Verwaltung_auftraege_main
 End Class

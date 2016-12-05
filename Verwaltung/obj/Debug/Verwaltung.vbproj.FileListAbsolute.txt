@@ -9,3 +9,14 @@ c:\users\andy\documents\visual studio 2015\Projects\Verwaltung\Verwaltung\obj\De
 c:\users\andy\documents\visual studio 2015\Projects\Verwaltung\Verwaltung\obj\Debug\Verwaltung.exe
 c:\users\andy\documents\visual studio 2015\Projects\Verwaltung\Verwaltung\obj\Debug\Verwaltung.xml
 c:\users\andy\documents\visual studio 2015\Projects\Verwaltung\Verwaltung\obj\Debug\Verwaltung.pdb
+C:\Users\Eichinger\Source\Repos\Verwaltungs-software\Verwaltung\bin\Debug\Verwaltung.exe.config
+C:\Users\Eichinger\Source\Repos\Verwaltungs-software\Verwaltung\obj\Debug\Verwaltung.exe
+C:\Users\Eichinger\Source\Repos\Verwaltungs-software\Verwaltung\obj\Debug\Verwaltung.xml
+C:\Users\Eichinger\Source\Repos\Verwaltungs-software\Verwaltung\obj\Debug\Verwaltung.pdb
+C:\Users\Eichinger\Source\Repos\Verwaltungs-software\Verwaltung\bin\Debug\Verwaltung.exe
+C:\Users\Eichinger\Source\Repos\Verwaltungs-software\Verwaltung\bin\Debug\Verwaltung.pdb
+C:\Users\Eichinger\Source\Repos\Verwaltungs-software\Verwaltung\bin\Debug\Verwaltung.xml
+C:\Users\Eichinger\Source\Repos\Verwaltungs-software\Verwaltung\obj\Debug\Verwaltung.vbprojResolveAssemblyReference.cache
+C:\Users\Eichinger\Source\Repos\Verwaltungs-software\Verwaltung\obj\Debug\Verwaltung.Form1.resources
+C:\Users\Eichinger\Source\Repos\Verwaltungs-software\Verwaltung\obj\Debug\Verwaltung.Resources.resources
+C:\Users\Eichinger\Source\Repos\Verwaltungs-software\Verwaltung\obj\Debug\Verwaltung.vbproj.GenerateResource.Cache

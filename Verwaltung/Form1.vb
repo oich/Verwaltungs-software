@@ -20,7 +20,7 @@
         beab = CoB_beab.Text
         af_bez = TE_bennenung.Text
         kont = TE_kontakt.Text
-        pfad = "d:\verwaltung\" & lb_abteilung.SelectedItem & "\"
+        pfad = ("d:\verwaltung\" & lb_abteilung.SelectedItem & "\")
         pfad_kunde = (pfad & kn_nr & "_" & kunde)
         pfad_auftrag = (pfad & kn_nr & "_" & kunde & "\" & kn_nr & "." & af_nr & "_" & beab & "_" & af_bez & "_" & date1 & "_" & kont)
         instdir = "d:\verwaltung\master\"
@@ -33,11 +33,15 @@
             My.Computer.FileSystem.CopyDirectory(instdir, pfad_auftrag)
 
         End If
+
+
     End Sub
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        brow_kunde.Navigate("D:\verwaltung\Lohnfertigung")
+
+
+        brow_kunde.Navigate("d:\verwaltung\")
 
     End Sub
     Dim ready As Boolean = False
@@ -62,15 +66,16 @@
     Private Sub lb_abteilung_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lb_abteilung.SelectedIndexChanged
         If lb_abteilung.SelectedItem = ("Lohnfertigung") Then
             ready = True
-            brow_kunde.Navigate("D:\verwaltung\Lohnfertigung")
+            brow_kunde.Navigate("d:\verwaltung\Lohnfertigung")
 
         End If
 
         If lb_abteilung.SelectedItem = ("Vorrichtungsbau") Then
             ready = True
-            brow_kunde.Navigate("D:\verwaltung\Vorrichtungsbau")
+            brow_kunde.Navigate("d:\verwaltung\Vorrichtungsbau")
 
         End If
         ready = False
     End Sub
+
 End Class
