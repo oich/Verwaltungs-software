@@ -20,3 +20,14 @@ C:\Users\Eichinger\Source\Repos\Verwaltungs-software\Verwaltung\obj\Debug\Verwal
 C:\Users\Eichinger\Source\Repos\Verwaltungs-software\Verwaltung\obj\Debug\Verwaltung.Form1.resources
 C:\Users\Eichinger\Source\Repos\Verwaltungs-software\Verwaltung\obj\Debug\Verwaltung.Resources.resources
 C:\Users\Eichinger\Source\Repos\Verwaltungs-software\Verwaltung\obj\Debug\Verwaltung.vbproj.GenerateResource.Cache
+C:\Users\Andy\Documents\GitHub\Verwaltungs-software\Verwaltung\bin\Debug\Verwaltung.exe.config
+C:\Users\Andy\Documents\GitHub\Verwaltungs-software\Verwaltung\obj\Debug\Verwaltung.exe
+C:\Users\Andy\Documents\GitHub\Verwaltungs-software\Verwaltung\obj\Debug\Verwaltung.xml
+C:\Users\Andy\Documents\GitHub\Verwaltungs-software\Verwaltung\obj\Debug\Verwaltung.pdb
+C:\Users\Andy\Documents\GitHub\Verwaltungs-software\Verwaltung\bin\Debug\Verwaltung.exe
+C:\Users\Andy\Documents\GitHub\Verwaltungs-software\Verwaltung\bin\Debug\Verwaltung.pdb
+C:\Users\Andy\Documents\GitHub\Verwaltungs-software\Verwaltung\bin\Debug\Verwaltung.xml
+C:\Users\Andy\Documents\GitHub\Verwaltungs-software\Verwaltung\obj\Debug\Verwaltung.vbprojResolveAssemblyReference.cache
+C:\Users\Andy\Documents\GitHub\Verwaltungs-software\Verwaltung\obj\Debug\Verwaltung.Form1.resources
+C:\Users\Andy\Documents\GitHub\Verwaltungs-software\Verwaltung\obj\Debug\Verwaltung.Resources.resources
+C:\Users\Andy\Documents\GitHub\Verwaltungs-software\Verwaltung\obj\Debug\Verwaltung.vbproj.GenerateResource.Cache
